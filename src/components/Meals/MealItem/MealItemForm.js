@@ -18,7 +18,7 @@ const MealItemForm = props => {
             console.log('amount is invalid')
             return;
         }
-        console.log('go to cart')
+        // console.log('go to cart');
         props.onAddToCart(enteredAmountNumber);
     };
 

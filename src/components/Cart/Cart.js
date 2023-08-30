@@ -48,6 +48,7 @@ const Cart = (props) => {
 				orderedItems: cartCtx.items
 			})
 		});
+		props.onClose();
 	};
 
 	const modalActions =

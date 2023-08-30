@@ -14,9 +14,9 @@ const AvailableMeals = props => {
 	useEffect(() => {
 		const fetchMeals = async () => {
 			const response = await fetch('https://module-17-1-default-rtdb.firebaseio.com/meals.json');
-			console.log(response);
+			// console.log(response);
 			const responseData = await response.json();
-			console.log(responseData);
+			// console.log(responseData);
 
 			if (!response.ok) {
 				throw new Error('Something went wrong');
@@ -33,7 +33,7 @@ const AvailableMeals = props => {
 					price: responseData[key].price
 				});
 			}
-			console.log(loadedMeals);
+			// console.log(loadedMeals);
 			setMeals(loadedMeals);
 			setIsLoading(false);
 		}
